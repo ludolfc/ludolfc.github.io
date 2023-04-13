@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LudolfC Programming Language</title>
+    <title>LudolfC Online Interpreter</title>
     <meta name="author" content="Tomas Tulka">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
     </style>
   </head>
   <body>
-    <h1>LudolfC Programming Language</h1>
+    <h1>LudolfC Interpreter</h1>
     <form>
         <div>
             <textarea id="code" rows="20" spellcheck="false" wrap="off">
@@ -32,10 +32,10 @@
 insertionSort := (arr) {
     n := arr.size
     i := 1
-    while i < n {
+    while i &lt; n {
         current := arr[i]
         j := i - 1 
-        while j > -1 & current < arr[j] {
+        while j &gt; -1 & current &lt; arr[j] {
             arr[j + 1] := arr[j]
             j := j - 1
         }
@@ -88,5 +88,7 @@ insertionSort([8,5,6,3,2,1,7,9,4])
                    obj.isFunction ? '[function]' : JSON.stringify(obj)
         }
     </script>
+    
+    <a href="https://github.com/ludolf/ludolfc"><img decoding="async" loading="lazy" width="120" height="120" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="LudolfC on GitHub" data-recalc-dims="1" style="position: absolute; top: 0; right: 0; width: 8em; height: 8em;"></a>
   </body>
 </html>
